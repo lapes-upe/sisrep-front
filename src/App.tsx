@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import AppRoutes from "./Routes";
 
 function App() {
-
   return (
-    <h1>SisRep Front</h1>
-  )
+    <div>
+      <AppRoutes />
+    </div>
+  );
 }
 
-export default App
+export default App;
