@@ -12,13 +12,11 @@ function HeaderSecond() {
   });
 
   return (
-    <ContainerGlobal>
-      <Container maxWidth="lg">
-        <Stack style={styles.main}>
-          <h1>HeaderSecond</h1>
-        </Stack>
+    <Stack className="headerSecondStack">
+      <Container className="headerSecondContainer" maxWidth="lg" >
+        <h1>HeaderSecond</h1>
       </Container>
-    </ContainerGlobal>
+    </Stack>
   );
 }
 

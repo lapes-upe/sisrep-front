@@ -12,13 +12,11 @@ function Footer() {
   });
 
   return (
-    <ContainerGlobal>
-      <Container maxWidth="lg" >
-        <Stack style={styles.main}>
-          <h1>Footer</h1>
-        </Stack>
+    <Stack className="footerStack">
+      <Container className="footerContainer" maxWidth="lg" >
+        <h1>Footer</h1>
       </Container>
-    </ContainerGlobal>
+    </Stack>
   );
 }
 

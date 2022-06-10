@@ -12,13 +12,11 @@ function HeaderPrimary() {
   });
 
   return (
-    <ContainerGlobal>
-      <Container maxWidth="lg">
-        <Stack style={styles.main}>
-          <h1>HeaderPrimary</h1>
-        </Stack>
+    <Stack className="headerPrimaryStack">
+      <Container className="headerPrimaryContainer" maxWidth="lg" >
+        <h1>HeaderPrimary</h1>
       </Container>
-    </ContainerGlobal>
+    </Stack>
   );
 }
 
