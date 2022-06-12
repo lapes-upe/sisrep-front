@@ -1,22 +1,34 @@
 import "./HeaderPrimary.scss";
 import { StyleSheet } from "../../utils/StyleSheet";
-import Container from '@mui/material/Container';
-import Stack from '@mui/material/Stack';
-import ContainerGlobal from "../ContainerGlobal";
+import ContainerCustom from "../ContainerCustom/ContainerCustom";
+import { Link } from "react-router-dom";
 
 function HeaderPrimary() {
   const styles = StyleSheet.create({
-    main: {
-      color: "green",
+    variante: {
+      color: 'red'
     },
   });
 
   return (
-    <Stack className="headerPrimaryStack">
-      <Container className="headerPrimaryContainer" maxWidth="lg" >
-        <h1>HeaderPrimary</h1>
-      </Container>
-    </Stack>
+    <header className="headerPrimary">
+      <ContainerCustom>
+        <div className="headerBody">
+          <div className="left">
+            <strong>SISREP</strong>
+          </div>
+          <div className="rigth">
+            <ul>
+              <li><Link to={'/'}>Início</Link></li>
+              <div className="verticalLine"></div>
+              <li><Link to={'/sobre'}>Sobre</Link></li>
+              <div className="verticalLine"></div>
+              <li><Link to={'/contato'}>Contato</Link></li>
+            </ul>
+          </div>
+        </div>
+      </ContainerCustom>
+    </header>
   );
 }
 

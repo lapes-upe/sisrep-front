@@ -1,17 +1,10 @@
-import * as React from 'react';
-import Stack from '@mui/material/Stack';
-import Container from '@mui/material/Container';
 import "./Home.scss"
-import ContainerGlobal from '../../layouts/ContainerGlobal';
+import ContainerCustom from '../../layouts/ContainerCustom/ContainerCustom';
 
 export default function Home() {
   return (
-    <ContainerGlobal>
-      <Container maxWidth="lg" >
-        <Stack>
-          <h1>Home</h1>
-        </Stack>
-      </Container>
-    </ContainerGlobal>
+    <ContainerCustom customClass='min-height'>
+      <h1>Pagina Inicial</h1>
+    </ContainerCustom>
   );
 }

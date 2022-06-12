@@ -1,7 +1,59 @@
-.headerSecondStack {
-    background-color: rgb(0, 0, 0);
+.headerSecond {
+    background-color: #1C3C78;
+    display: flex;
+    min-height: 72px;
+    align-items: center;
 }
 
-.headerSecondContainer {
-    background-color: rgb(157, 157, 157);
+.headerSecond .headerBody {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+
+.headerSecond .left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerSecond .rigth {
+    display: flex;
+    align-items: center;
+}
+
+.headerSecond .logo {
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 24px;
+}
+
+.headerSecond .headerBody ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.headerSecond .headerBody li{
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+.headerSecond a{
+    color: white;
+    text-decoration: none;
+}
+
+.headerSecond a:hover {
+    text-decoration:underline;
+}
+
+.headerSecond .verticalLine {
+    display: flex;
+    align-self: center;
+    height: 40px;
+    border-right: 1px solid rgb(255, 255, 255);
+    margin-right: 24px;
 }

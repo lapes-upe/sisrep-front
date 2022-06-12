@@ -1,3 +1,5 @@
+
+
 html,
 body,
 div,
@@ -26,15 +28,9 @@ nav,
 section {
     margin: 0;
     padding: 0;
-    border: 0;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-
-.containerGlobal {
-    background-color: rgb(98, 98, 98);
+html, body {
+    background-color: #F1F1F1;
+    font-family: sans-serif;
 }
