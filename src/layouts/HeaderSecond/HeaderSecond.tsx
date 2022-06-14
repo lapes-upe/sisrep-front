@@ -2,6 +2,7 @@ import "./HeaderSecond.scss";
 import { StyleSheet } from "../../utils/StyleSheet";
 import ContainerCustom from "../ContainerCustom/ContainerCustom";
 import { Link } from "react-router-dom";
+import { Box, Button } from "@mui/material";
 
 function HeaderSecond() {
   const styles = StyleSheet.create({
@@ -11,27 +12,27 @@ function HeaderSecond() {
   });
 
   return (
-    <header className="headerSecond">
+    <Box component="header" className="headerSecond">
       <ContainerCustom>
-        <div className="headerBody">
-          <div className="left">
-            <div className="logo">UPE</div>
-            <div>
-              <ul>
-                <li><Link to={'/'}>Preencher PADs</Link></li>
-                <li><Link to={'/sobre'}>Emissão de Diploma</Link></li>
-                <li><Link to={'/contato'}>Dispensa de ACEs/DCEs</Link></li>
-                <li><Link to={'/contato'}>Dispensa de Disciplina</Link></li>
-              </ul>
-            </div>
-          </div>
-          <div className="rigth">
-            <div className="verticalLine"></div>
-            <button>Acessar</button>
-          </div>
-        </div>
+        <Box className="headerBody">
+          <Box className="left">
+            <Box className="logo">UPE</Box>
+            <Box>
+              <Box component="ul">
+                <Box component="li"><Link to={'/'}>Preencher PADs</Link></Box>
+                <Box component="li"><Link to={'/sobre'}>Emissão de Diploma</Link></Box>
+                <Box component="li"><Link to={'/contato'}>Dispensa de ACEs/DCEs</Link></Box>
+                <Box component="li"><Link to={'/contato'}>Dispensa de Disciplina</Link></Box>
+              </Box>
+            </Box>
+          </Box>
+          <Box className="rigth">
+            <Box className="verticalLine"></Box>
+            <Button variant="contained" sx={{backgroundColor: "secondary.main"}}>Acessar</Button>
+          </Box>
+        </Box>
       </ContainerCustom>
-    </header>
+    </Box>
   );
 }
 
