@@ -1,7 +1,7 @@
 import "./Footer.scss";
 import { StyleSheet } from "../../utils/StyleSheet";
-import Container from '@mui/material/Container';
 import ContainerCustom from "../ContainerCustom/ContainerCustom";
+import { Box, Typography } from '@mui/material';
 
 function Footer() {
   const styles = StyleSheet.create({
@@ -11,21 +11,28 @@ function Footer() {
   });
 
   return (
-    <footer className="footer">
+    <Box component="footer" 
+    sx={{
+      backgroundColor:'primary.main',
+      display: 'flex',
+      minHeight: 64,
+      alignItems: 'center',
+    }} 
+    className="footer">
       <ContainerCustom>
-        <div className="footerBody">
-          <div className="horizontalLine"></div>
-          <div className="content">
-            <span>Copyright © 2022 Universidade de Pernambuco. Todos os direitos reservados.</span>
-            <div>
-              <strong>Nós Siga:</strong>
-              <span>IMG1</span>
-              <span>IMG2</span>
-            </div>
-          </div>
-        </div>
+        <Box className="footerBody">
+          <Box className="horizontalLine"></Box>
+          <Box className="content">
+            <Typography>Copyright © 2022 Universidade de Pernambuco. Todos os direitos reservados.</Typography>
+            <Box>
+              <Box component="strong">Nós Siga:</Box>
+              <Box component="span">IMG1</Box>
+              <Box component="span">IMG2</Box>
+            </Box>
+          </Box>
+        </Box>
       </ContainerCustom>
-    </footer>
+    </Box>
   );
 }
 

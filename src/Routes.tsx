@@ -11,8 +11,8 @@ const AppRoutes: React.FC = () => {
       <HeaderPrimary />
       <HeaderSecond />
       <Routes>
-        {Object.values(StaticRoutes).map((route) => {
-          return <Route path={route.path} element={route.component} />;
+        {Object.values(StaticRoutes).map((route, idx) => {
+          return <Route key={idx} path={route.path} element={route.component} />;
         })}
       </Routes>
       <Footer />
