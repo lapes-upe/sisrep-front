@@ -1,0 +1,12 @@
+.container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.min-height {
+    background-color: rgb(255, 255, 255);
+    min-height: calc(100vh - 168px);
+}

@@ -1,0 +1,26 @@
+.footer {
+    // background-color: #1C3C78;
+    // display: flex;
+    // min-height: 64px;
+    // align-items: center;
+}
+
+.footer .footerBody {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    margin: 0 24px;
+}
+
+.footer .horizontalLine {
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.footer .content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 16px;
+}
