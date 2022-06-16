@@ -3,6 +3,7 @@ import { StyleSheet } from "../../utils/StyleSheet";
 import ContainerCustom from "../ContainerCustom/ContainerCustom";
 import { Link } from "react-router-dom";
 import { Box, Button } from "@mui/material";
+import LogoUPE from "../../assets/LogoUPE(branca).png";
 
 function HeaderSecond() {
   const styles = StyleSheet.create({
@@ -16,7 +17,18 @@ function HeaderSecond() {
       <ContainerCustom>
         <Box className="headerBody">
           <Box className="left">
-            <Box className="logo">UPE</Box>
+            <Box className="logo">
+              <Link to={'/'}>
+                <Box
+                  component="img"
+                  sx={{
+                    height: 64,
+                  }}
+                  alt="The house from the offer."
+                  src={LogoUPE}
+                />
+              </Link>
+            </Box>
             <Box>
               <Box component="ul">
                 <Box component="li"><Link to={'/'}>Preencher PADs</Link></Box>
@@ -28,7 +40,7 @@ function HeaderSecond() {
           </Box>
           <Box className="rigth">
             <Box className="verticalLine"></Box>
-            <Button variant="contained" sx={{backgroundColor: "secondary.main"}}>Acessar</Button>
+            <Button variant="contained" sx={{ backgroundColor: "secondary.main" }}>Acessar</Button>
           </Box>
         </Box>
       </ContainerCustom>
