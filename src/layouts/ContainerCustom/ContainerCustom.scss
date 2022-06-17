@@ -1,12 +1,12 @@
 .container {
     width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    flex-wrap: wrap;
+    // display: flex !important;
+    // justify-content: space-between !important;
+    margin: 0 auto ;
+    // flex-wrap: wrap !important;
 }
 
 .min-height {
-    background-color: rgb(255, 255, 255);
-    min-height: calc(100vh - 168px);
+    background-color: rgb(255, 255, 255) !important;
+    min-height: calc(100vh - 168px) !important;
 }

@@ -26,6 +26,19 @@ export const LightTheme = createTheme({
     teste: {
         backgroundColor: '#EC2026'
     },
-    spacing: [0, 4, 8, 16, 32, 64],
+    typography: {
+        h1: {
+            fontSize: 40,
+        },
+        h2: {
+            fontSize: 32,
+        },
+        h6: {
+            fontSize: 18,
+        },
+        subtitle2: {
+            fontSize: 16,
+        }
+    }
     
 });

@@ -32,9 +32,9 @@ function HeaderSecond() {
             <Box>
               <Box component="ul">
                 <Box component="li"><Link to={'/'}>Preencher PADs</Link></Box>
-                <Box component="li"><Link to={'/sobre'}>Emissão de Diploma</Link></Box>
-                <Box component="li"><Link to={'/contato'}>Dispensa de ACEs/DCEs</Link></Box>
-                <Box component="li"><Link to={'/contato'}>Dispensa de Disciplina</Link></Box>
+                <Box component="li"><Link to={'/'}>Emissão de Diploma</Link></Box>
+                <Box component="li"><Link to={'/'}>Dispensa de ACEs/DCEs</Link></Box>
+                <Box component="li"><Link to={'/'}>Dispensa de Disciplina</Link></Box>
               </Box>
             </Box>
           </Box>

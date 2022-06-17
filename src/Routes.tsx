@@ -4,8 +4,12 @@ import Footer from "./layouts/Footer/Footer";
 import HeaderPrimary from "./layouts/HeaderPrimary/HeaderPrimary";
 import HeaderSecond from "./layouts/HeaderSecond/HeaderSecond";
 import { StaticRoutes } from "./business/useSisrepRoutes";
+import { useContext } from "react";
+import { DataContext } from "./contexts/Data/Context";
 
 const AppRoutes: React.FC = () => {
+  const { auth } = useContext(DataContext);
+
   return (
     <Router>
       <HeaderPrimary />
