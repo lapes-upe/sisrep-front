@@ -1,0 +1,6 @@
+{
+    "ApiConfig": {
+        "baseUrl": "https://jsonplaceholder.typicode.com",
+        "key": "..."
+    }
+}
